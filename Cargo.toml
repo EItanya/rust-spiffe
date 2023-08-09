@@ -15,7 +15,10 @@ categories = ["cryptography"]
 keywords = ["SPIFFE", "X509", "JWT"]
 
 [dependencies]
+<<<<<<< HEAD
 bytes = { version = "1", features = ["serde"] }
+=======
+>>>>>>> 75aaa783a90b73d4ad4e06a99a4e3a41b3977d66
 tonic = { version = "0.9", default-features = false, features = ["prost", "codegen", "transport"]}
 prost = { version = "0.11"}
 prost-types = {version = "0.11"}

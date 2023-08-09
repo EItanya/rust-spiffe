@@ -107,6 +107,7 @@ bin/spire-server entry create -parentID ${agent_id} -spiffeID spiffe://example.o
 sleep 10  # this value is derived from the default Agent sync interval
 # Register the workload through UID with the SPIFFE ID "spiffe://example.org/myservice2" with a TTL of 5 seconds
 bin/spire-server entry create -parentID ${agent_id} -spiffeID spiffe://example.org/myservice2 -selector unix:uid:$(id -u) -ttl 5
+<<<<<<< HEAD
 sleep 10  # this value is derived from the default Agent sync interval
 
 
@@ -115,6 +116,8 @@ uid=$(id -u)
 uid_plus_one=$((uid + 1))
 # Register a different UID with the SPIFFE ID "spiffe://example.org/different-process" with a TTL of 5 seconds
 bin/spire-server entry create -parentID ${agent_id} -spiffeID spiffe://example.org/different-process -selector unix:uid:${uid_plus_one} -ttl 5
+=======
+>>>>>>> 75aaa783a90b73d4ad4e06a99a4e3a41b3977d66
 sleep 10  # this value is derived from the default Agent sync interval
 
 popd
